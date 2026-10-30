@@ -1,9 +1,9 @@
 // 11 Music Player service worker.
 // Network-first for the app shell so updates (and new icons) always arrive,
 // with the cache as an offline fallback. Bump VERSION on every release.
-const VERSION = '0.0.1';
+const VERSION = '0.0.1-no-speed-panel-v1';
 const CACHE_NAME = '11-music-player-v' + VERSION;
-const APP_SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
+const APP_SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './wallpapers/porsche-911.jpg', './wallpapers/bmw-blue.jpg', './wallpapers/autumn-drive.jpg', './wallpapers/superman-red.jpg', './wallpapers/autumn-silhouette.jpg', './wallpapers/blue-sword.jpg', './wallpapers/purple-supercar.jpg'];
 
 self.addEventListener('install', event => {
   event.waitUntil(
